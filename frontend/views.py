@@ -9,5 +9,9 @@ def main(request):
     }
     return render(request, "base.html", context)
 
+
+def song_with_id(request,id):
+    return render(request, "base.html")
+
 # Create your views here.
 
