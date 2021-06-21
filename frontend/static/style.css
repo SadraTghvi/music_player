@@ -10,6 +10,10 @@
     height: 55px;
 }
 
+.card{
+    margin-top: 5rem;
+}
+
 ul{
     list-style-type: none;
     display: flex;
