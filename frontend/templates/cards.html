@@ -3,12 +3,12 @@
 <div class="container container_me">
     
     {% for song in songs %}
-        <div class="card" style="width: 18rem;">
+        <div id="songs" class="card" style="width: 18rem;">
             <img src="static{{song.pic.url}}" class="card-size card-img-top" >
             <div class="card-body">
                 <h5 class="card-title">{{song.title}}</h5>
                 <p class="card-text">{{song.author}}</p>
-                <a href="{% url 'songs:song' song.id %}" class="btn btn-primary">Go somewhere</a>
+                <a href="{% url 'songs:song' song.id %}" class="btn btn-primary">Listen It</a>
             </div>
         </div>
         {% endfor %}
