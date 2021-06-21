@@ -54,3 +54,31 @@ li {
   text-decoration: none;
   margin: 0.3rem 1rem;
 }
+
+.my_flex{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.song_card{
+  width: 70rem;
+}
+
+.song_h2{
+  text-align: center;
+  font-family: monospace;
+  margin-bottom: 0.5rem;
+}
+
+.song_p{
+  font-size: larger;
+  text-align: center;
+  margin-top: 25px;  
+}
+
+audio{
+  width: 100%;
+}
