@@ -1,10 +1,10 @@
-
+{% load static %}
 {% for song in songs %}
     
     <div class="container">
     
         <div class="card" style="width: 18rem;">
-            <img src="{{song.pic.url}}" class="card-img-top" >
+            <img src="static{{song.pic.url}}" class="card-img-top" >
             <div class="card-body">
                 <h5 class="card-title">{{song.title}}</h5>
                 <p class="card-text">{{song.author}}</p>
