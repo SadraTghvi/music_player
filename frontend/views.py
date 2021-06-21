@@ -1,10 +1,13 @@
 from django.shortcuts import render
+from songs.models import *
 
 
 def main(request):
-    return render(request,"base.html")
+    song = Song.objects.all()
+    context = {
+        "songs" : song,
+    }
+    return render(request, "base.html", context)
 
 # Create your views here.
 
-
-# TODO: 1.model for songs/2.styling for cards in cards.html
